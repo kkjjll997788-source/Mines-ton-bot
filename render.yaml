@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mines-ton-signal-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8683687626:AAH3HHNVC_E-qJ-AfsNV_inbQP_Bd9knmzuE
